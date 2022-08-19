@@ -10,7 +10,6 @@ import (
 
 const (
 	DefaultBucket NameTypeOfBolt = "default"
-	DLTBucket     NameTypeOfBolt = "dlt"
 )
 
 var (

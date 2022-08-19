@@ -1,1 +1,63 @@
-{}
+{
+  "type": "page",
+  "body": {
+    "type": "page",
+    "body": [
+      {
+        "type": "flex",
+        "items": [
+          {
+            "type": "form",
+            "title": "",
+            "mode": "horizontal",
+            "body": [
+              {
+                "type": "input-email",
+                "name": "email",
+                "label": "手机号",
+                "required": true,
+                "size": "md",
+                "id": "u:de62abf78425",
+                "validations": {
+                  "isTelNumber": true
+                }
+              },
+              {
+                "type": "input-password",
+                "name": "password",
+                "label": "密码",
+                "required": true,
+                "id": "u:0084bbd85af5"
+              },
+              {
+                "type": "checkbox",
+                "name": "rememberMe",
+                "label": "记住登录",
+                "id": "u:359093b19d9d"
+              }
+            ],
+            "id": "u:e79e6cd0145b",
+            "actions": [
+              {
+                "type": "submit",
+                "label": "登录",
+                "id": "u:d207aa121344"
+              },
+              {
+                "type": "submit",
+                "label": "注册",
+                "id": "u:e745d7f68694"
+              }
+            ],
+            "autoFocus": true,
+            "resetAfterSubmit": true,
+            "rules": [],
+            "persistData": true,
+            "wrapWithPanel": true,
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  }
+}
