@@ -20,6 +20,10 @@ func Router(e *gin.Engine) {
 			"title":  "用户登录",
 			"config": string(bolt.InitBolt().Query("login")),
 		}))
+		webPage.GET("dashboard", middleware.InitAce("tmpl", "default", map[string]interface{}{
+			"title":  "仪表盘",
+			"config": string(bolt.InitBolt().Query("dashboard")),
+		}))
 	}
 
 	//-----------------------API-----------------------
